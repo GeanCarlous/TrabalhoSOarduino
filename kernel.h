@@ -7,11 +7,16 @@
 #define REPEAT 2
 
 // declaração de ponteiro de função
-typedef char (*ptrFunc)(int);
+typedef char (*ptrFunc)(void);
 
 // definição da estrutura de um processo
 typedef struct {
+    //ponteiro para a função a ser exec
     ptrFunc func;
+    //periodo de reexecução da função
+    int period;
+    //contador de tempo de cada processo
+    int deadline;
 }process;
 
 // protótipo das funções do kernel

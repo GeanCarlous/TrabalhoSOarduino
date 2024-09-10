@@ -1,0 +1,1 @@
+retorna se precisa repetir novamente ou não
